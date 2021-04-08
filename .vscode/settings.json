@@ -1,4 +1,4 @@
 {
-  "python.pythonPath": "stocks/bin/python",
+  "python.pythonPath": "stocks\\Scripts\\python.exe",
   "jupyter.jupyterServerType": "local"
 }
