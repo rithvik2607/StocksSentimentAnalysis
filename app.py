@@ -1,12 +1,9 @@
 from flask import Flask, render_template, request
-import jsonify
 import requests
 import pickle
 import numpy as np
 import pandas as pd
 import sys
-
-sys.path.insert(0, 'D:\projectsCertificates\stockSentiment\stocks\Lib\site-packages')
 
 file1 = 'stockSentiment.pkl'
 rfClassifier = pickle.load(open(file1, 'rb'))
@@ -37,4 +34,4 @@ def predict():
         return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=8000)

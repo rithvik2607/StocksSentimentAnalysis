@@ -1,0 +1,5 @@
+.gitignore
+stocks
+.vscode
+.ipynb_checkpoints
+dataFiles
